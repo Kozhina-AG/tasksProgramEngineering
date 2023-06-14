@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5e4d192-7c77-455a-a76c-2aee3c856bb4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/BMIMetrics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/F18DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/F45DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/F65DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/M18DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/M45DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/M65DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/view/BMICalculatorScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/view/BMICalculatorScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/F18DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/F45DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/F65DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/M18DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/M45DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/M65DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/view/BMICalculatorScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/view/BMICalculatorScreen.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RBYn4xT0uovC9E2LSGk4zsRc4m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/Курсовая/Anastasia&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5e4d192-7c77-455a-a76c-2aee3c856bb4" name="Changes" comment="" />
+      <created>1686725106148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686725106148</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

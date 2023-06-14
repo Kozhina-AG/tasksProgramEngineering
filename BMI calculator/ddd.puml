@@ -1,0 +1,176 @@
+@startuml
+class com.example.view.BMICalculatorScreen {
+- Main main
+- TextField nameField
+- TextField snilsField
+- TextField heightField
+- TextField weightField
+- TextField ageField
+- ComboBox<String> sexComboBox
+- Label resultLabel
++ VBox getUI()
+- void calculateBMI()
+- void goBack()
+- ResultSet defineCategory(int,String,double)
+}
+class com.example.view.PatientScreen {
+- BorderPane root
+- PatientDao patientDao
+- Main main
+- TableView<Patient> patientTable
+- TextField searchField
+- Patient selectedPatient
+- void initUI()
++ BorderPane getUI()
+- void searchPatients()
+- void deleteSelectedPatient()
+- void updateSelectedPatient()
+- void showBmiChart()
+- void goBack()
+}
+class com.example.dao.F65DAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
++ ResultSet getDiagnosisMinMax(double)
+}
+class com.example.dao.UserDAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
+}
+class com.example.dao.M45DAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
++ ResultSet getDiagnosisMinMax(double)
+}
+class com.example.Main {
+- Stage primaryStage
+- BMICalculatorScreen bmiCalculatorScreen
+- PatientScreen patientScreen
+- String dataSource
++ {static} void main(String[])
++ String getDataSource()
++ void start(Stage)
++ void initUI()
+- void showBmiCalculatorScreen()
+- void showPatientsScreen()
+}
+class com.example.model.Patient {
++ int age
++ String sex
+- int id
+- String name
+- String snils
+- double weight
+- double height
++ int getId()
++ void setId(int)
++ String getName()
++ void setName(String)
++ String getSnils()
++ void setSnils(String)
++ double getWeight()
++ void setWeight(double)
++ double getHeight()
++ void setHeight(double)
++ int getAge()
++ void setAge(int)
++ String getSex()
++ void setSex(String)
+}
+class com.example.dao.M18DAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
++ ResultSet getDiagnosisMinMax(double)
+}
+class com.example.model.ObesityCategoriesSingleton {
+- {static} ObesityCategoriesSingleton instance
+- List<String> categories
++ {static} ObesityCategoriesSingleton getInstance()
++ void addCategory(String)
++ void removeCategory(String)
++ List<String> getCategories()
+}
+class com.example.dao.F18DAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
++ ResultSet getDiagnosisMinMax(double)
+}
+interface com.example.dao.DAO {
+~ void createTableIfNotExists()
+~ ResultSet getDiagnosisMinMax(double)
+}
+class com.example.dao.M65DAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
++ ResultSet getDiagnosisMinMax(double)
+}
+class com.example.dao.PatientBMIDAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
++ void addToDB(int,double)
++ Map<java.util.Date,Double> getPatientBMIs(int)
+}
+class com.example.dao.F45DAO {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String TABLE
+- Connection connection
++ void createTableIfNotExists()
++ ResultSet getDiagnosisMinMax(double)
+}
+class com.example.dao.PatientDao {
+- {static} String DB_URL
+- {static} String DB_USERNAME
+- {static} String DB_PASSWORD
+- {static} String PATIENTS_TABLE
+- {static} String FILE_PATH
+- Connection connection
++ void createTableIfNotExists()
++ int addToDBAndRetrieveId(Patient)
++ void updatePatientInDB(Patient)
++ void removePatientFromDB(Patient)
++ List<Patient> searchPatientsInDB(String)
++ void addPatientToFile(Patient,double)
++ List<Patient> searchPatientsInFile(String)
++ void updatePatientInFile(Patient,double)
++ void removePatientFromFile(Patient)
+}
+
+
+com.example.dao.DAO <|.. com.example.dao.F65DAO
+com.example.dao.DAO <|.. com.example.dao.M45DAO
+javafx.application.Application <|-- com.example.Main
+com.example.dao.DAO <|.. com.example.dao.M18DAO
+com.example.dao.DAO <|.. com.example.dao.F18DAO
+com.example.dao.DAO <|.. com.example.dao.M65DAO
+com.example.dao.DAO <|.. com.example.dao.F45DAO
+@enduml

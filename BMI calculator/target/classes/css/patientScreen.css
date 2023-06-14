@@ -1,0 +1,6 @@
+#titleLabel {
+    -fx-font-size: 24pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to bottom, #FFA500, #FF8C00);
+    -fx-alignment: center;
+}
